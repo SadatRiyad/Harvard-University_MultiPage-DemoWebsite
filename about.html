@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | HU</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/logo.png">
+  <!-- popping font link google font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
+    rel="stylesheet">
+  <!-- wow.css linking -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!--font awsome css linking here-->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+
+<body>
+  <!-- header start -->
+  <section class="sub-header wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".2s">
+    <nav>
+      <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="testimonial.html">TESTIMONIAL</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About <span>Us</span></h1>
+  </section>
+  <!-- header end -->
+
+  <!-- about us content start -->
+  <section class="about-content">
+    <div class="about-col wow slideInLeft" data-wow-duration="1.2s" data-wow-delay=".9s">
+      <h2>About Harvard:</h2>
+      <h3>Pioneering Excellence since 1636</h3>
+      <p>Harvard University, founded in 1636, stands as an enduring testament to the pursuit of knowledge and the
+        power of education to shape the future. With a rich history spanning centuries, Harvard has evolved into a
+        global leader in academia, research, and innovation.
+      </p>
+
+      <h2>Joining a Legacy: </h2>
+      <p>As you explore Harvard's history, values, and contributions, you're stepping into a legacy of brilliance that
+        continues to evolve and shape the course of history. Welcome to a place where tradition meets innovation, and
+        where the pursuit of knowledge knows no limits.</p>
+      <span>Discover. Engage. Transform. <br></span>
+      <div>
+        <a href="contact.html" class="hero-btn">EXPLORE NOW</a>
+      </div>
+    </div>
+    <div class="about-col wow slideInRight" data-wow-duration="1.2s" data-wow-delay=".9s">
+      <img src="./img/about.jpg" alt="">
+    </div>
+  </section>
+  <!-- about us content end -->
+
+
+  <!-- footer start -->
+  <section class="footer wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".4s">
+    <div class="icons"><a href="#"> <i class="fa fa-arrow-up"></i> </a></div>
+    <h2>About Us</h2>
+    <p>
+      Harvard University: Igniting Minds, Inspiring Futures.<br>
+      <br>
+      Unveil the legacy of brilliance that fuels Harvard's journey, <br>
+      where innovation and tradition converge to shape leaders and transform the world.
+    </p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <span><i class="fa fa-heart love wow pulse" data-wow-iteration="infinite"></i></span> by <a
+        href="#"><span>ASM Nazmus Sadat.</span></a>
+      <br>&copy; 2023 All rights reserved.
+    </p>
+  </section>
+  <!-- footer end -->
+
+
+
+  <!-- js for toggle menu -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0px";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+  <!-- wow.js -->
+  <!-- wow.js linking -->
+  <script src="js/wow.min.js"></script>
+  <script>
+    var wow = new WOW(
+      {
+        boxClass: 'wow',      // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset: 0,          // distance to the element when triggering the animation (default is 0)
+        mobile: true,       // trigger animations on mobile devices (default is true)
+        live: true,       // act on asynchronously loaded content (default is true)
+        callback: function (box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null,    // optional scroll container selector, otherwise use window,
+        resetAnimation: true,     // reset animation on end (default is true)
+      }
+    );
+    wow.init();
+  </script>
+
+</body>
+
+</html>

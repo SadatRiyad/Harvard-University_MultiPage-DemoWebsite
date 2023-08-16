@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course | HU</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/logo.png">
+  <!-- popping font link google font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
+    rel="stylesheet">
+  <!-- wow.css linking -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!--font awsome css linking here-->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+
+<body>
+  <!-- header start -->
+  <section class="sub-header courses wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".2s">
+    <nav>
+      <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="testimonial.html">TESTIMONIAL</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our <span>Courses</span></h1>
+  </section>
+  <!-- header end -->
+
+  <!-- course start -->
+  <section class="course wow slideInLeft" data-wow-duration="1.2s" data-wow-delay=".8s">
+    <h2>Course We Offer</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+    <div class="row">
+      <div class="col-12">
+        <h3>Intermediate</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, reiciendis possimus placeat laboriosam quos
+          maxime. Labore facere blanditiis.</p>
+      </div>
+      <div class="col-12">
+        <h3>Degree</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, reiciendis possimus placeat laboriosam quos
+          maxime. Labore facere blanditiis.</p>
+      </div>
+      <div class="col-12">
+        <h3>Post Graduation</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, reiciendis possimus placeat laboriosam quos
+          maxime. Labore facere blanditiis.</p>
+      </div>
+    </div>
+  </section>
+  <!-- course end -->
+
+  <!-- facility start -->
+  <section class="facility wow slideInRight" data-wow-duration="1.2s" data-wow-delay=".6s">
+    <h2>Our Facilities</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+    <div class="row">
+      <div class="col-12">
+        <img src="img/library.png" alt="">
+        <h3>World Class library</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing hola elita, facilis?</p>
+      </div>
+      <div class="col-12">
+        <img src="img/basketball.png" alt="">
+        <h3>Largest Playground</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing hola elita, facilis?</p>
+      </div>
+      <div class="col-12">
+        <img src="img/cafeteria.png" alt="">
+        <h3>Modern Classrooms</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing hola elita, facilis?</p>
+      </div>
+      <div class="col-12">
+        <img src="img/library.png" alt="">
+        <h3>Best Education</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing hola elita, facilis?</p>
+      </div>
+    </div>
+  </section>
+  <!-- facility end -->
+
+  <!-- footer start -->
+  <section class="footer wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".4s">
+    <div class="icons"><a href="#"> <i class="fa fa-arrow-up"></i> </a></div>
+    <h2>About Us</h2>
+    <p>
+      Harvard University: Igniting Minds, Inspiring Futures.<br>
+      <br>
+      Unveil the legacy of brilliance that fuels Harvard's journey, <br>
+      where innovation and tradition converge to shape leaders and transform the world.
+    </p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <span><i class="fa fa-heart love wow pulse" data-wow-iteration="infinite"></i></span> by <a
+        href="#"><span>ASM Nazmus Sadat.</span></a>
+      <br>&copy; 2023 All rights reserved.
+    </p>
+  </section>
+  <!-- footer end -->
+
+
+
+  <!-- js for toggle menu -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0px";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+  <!-- wow.js -->
+  <!-- wow.js linking -->
+  <script src="js/wow.min.js"></script>
+  <script>
+    var wow = new WOW(
+      {
+        boxClass: 'wow',      // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset: 0,          // distance to the element when triggering the animation (default is 0)
+        mobile: true,       // trigger animations on mobile devices (default is true)
+        live: true,       // act on asynchronously loaded content (default is true)
+        callback: function (box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null,    // optional scroll container selector, otherwise use window,
+        resetAnimation: true,     // reset animation on end (default is true)
+      }
+    );
+    wow.init();
+  </script>
+
+</body>
+
+</html>
